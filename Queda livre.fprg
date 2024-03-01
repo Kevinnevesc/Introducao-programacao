@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Aluno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-01 10:03:40 "/>
+        <attribute name="created" value="QWx1bm87QUxVTk9JRkJBOzIwMjQtMDMtMDE7IjA5OjUwOjQ3ICI7MjM2MA=="/>
+        <attribute name="edited" value="QWx1bm87QUxVTk9JRkJBOzIwMjQtMDMtMDE7IjEwOjAzOjQwICI7MTsyNDUx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Este programa ir&#225; ler o tempo que um objeto em queda livre demora para atingir o solo e ir&#225; dizer a altura da queda.&quot;" newline="True"/>
+            <declare name="tempo, alturam, alturac" type="Real" array="False" size=""/>
+            <output expression="&quot;Informe o tempo (em segundos).&quot;" newline="True"/>
+            <input variable="tempo"/>
+            <assign variable="alturam" expression="9.8*(tempo^2)"/>
+            <assign variable="alturac" expression="alturam*100"/>
+            <output expression="&quot;A altura (em centimetros) ser&#225;:&quot;" newline="True"/>
+            <output expression="alturac" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Aluno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-01 10:31:07 "/>
+        <attribute name="created" value="QWx1bm87QUxVTk9JRkJBOzIwMjQtMDMtMDE7IjA5OjUwOjQ3ICI7MjM2MA=="/>
+        <attribute name="edited" value="QWx1bm87QUxVTk9JRkJBOzIwMjQtMDMtMDE7IjEwOjMxOjA3ICI7MzsyNDU3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Este programa ir&#225; ler 3 n&#250;meros referente a lados do qual deseja formar um tri&#226;ngulo , e ele dir&#225; se &#233; um tri&#226;ngulo equilatero, isoceles, escaleno ou n&#227;o forma triangulo.&quot;" newline="True"/>
+            <declare name="ladoA, ladoB, ladoC" type="Real" array="False" size=""/>
+            <output expression="&quot;Informe o primeiro lado:&quot;" newline="True"/>
+            <input variable="ladoA"/>
+            <output expression="&quot;Informe o segundo lado:&quot;" newline="True"/>
+            <input variable="ladoB"/>
+            <output expression="&quot;Informe o terceiro lado:&quot;" newline="True"/>
+            <input variable="ladoC"/>
+            <if expression="ladoA+ladoB&lt;=ladoC">
+                <then>
+                    <output expression="&quot;N&#227;o forma triangulo.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="ladoA+ladoC&lt;=ladoB">
+                        <then>
+                            <output expression="&quot;N&#227;o forma triangulo.&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="ladoB+ladoC&lt;=ladoA">
+                                <then>
+                                    <output expression="&quot;N&#227;o forma triangulo.&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="ladoA=ladoB=ladoC">
+                                        <then>
+                                            <output expression="&quot;Formaum tri&#226;ngulo equilatero.&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="ladoA=ladoB!=ladoC">
+                                                <then>
+                                                    <output expression="&quot;Forma um tri&#226;ngulo isoceles.&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <if expression="ladoA=ladoC!=ladoB">
+                                                        <then>
+                                                            <output expression="&quot;Forma um tri&#226;ngulo isoceles.&quot;" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <if expression="ladoB=ladoC!=ladoA">
+                                                                <then>
+                                                                    <output expression="&quot;Forma um tri&#226;ngulo isoceles.&quot;" newline="True"/>
+                                                                </then>
+                                                                <else>
+                                                                    <output expression="&quot;Forma um tri&#226;ngulo escaleno.&quot;" newline="True"/>
+                                                                </else>
+                                                            </if>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

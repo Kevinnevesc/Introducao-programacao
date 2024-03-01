@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Aluno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-01 09:46:49 "/>
+        <attribute name="created" value="QWx1bm87QUxVTk9JRkJBOzIwMjQtMDMtMDE7IjA3OjQ5OjM1ICI7MjM2Mw=="/>
+        <attribute name="edited" value="QWx1bm87QUxVTk9JRkJBOzIwMjQtMDMtMDE7IjA5OjQ2OjQ5ICI7MTsyNDc1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="forca, massaA, massaB, distancia" type="Real" array="False" size=""/>
+            <output expression="&quot;Este programa ir&#225; ler a dist&#226;ncia entre dois corpos, a massa de um deles e a for&#231;a entre eles, e informar&#225; a massa do segundo corpo.&quot;" newline="True"/>
+            <output expression="&quot;Informe a dist&#226;ncia entre os corpos em metros.&quot;" newline="True"/>
+            <input variable="distancia"/>
+            <output expression="&quot;Informe a massa de um dos corpos em kg.&quot;" newline="True"/>
+            <input variable="massaB"/>
+            <output expression="&quot;Informe a for&#231;a gravitacional entre os corpos em N.&quot;" newline="True"/>
+            <input variable="forca"/>
+            <assign variable="massaA" expression="(((forca*distancia^2)/0.0000000000667408)/massaB)"/>
+            <output expression="&quot;O valor da massa do segundo corpo em kg &#233;:&quot;" newline="True"/>
+            <output expression="massaA" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
